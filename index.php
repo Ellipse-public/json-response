@@ -2,7 +2,7 @@
 
 require_once __DIR__."/vendor/autoload.php";
 
-Use EllipseOnline\ResponseClass\jsonResponse;
+Use EllipseOnline\ResponseClass\JsonResponse;
 
 $student = array(
 	'name' => 'John Doe',
@@ -11,6 +11,6 @@ $student = array(
 	'collections' => ['books' => 'Intro to UML', 'music' => 'rap']
 );
 
-new jsonResponse('unauthorized','',$student)
+new jsonResponse('ok','',$student)
 
 ?>
