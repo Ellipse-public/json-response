@@ -1,7 +1,5 @@
 <?php
-
 namespace EllipseOnline\ResponseClass;
-
 
 class JsonResponse
 {
@@ -36,16 +34,16 @@ class JsonResponse
         // Code statut HTTP
         switch ($this->status)
         {
-            case "unauthorized":
+            case 'unauthorized':
                 $statusCode = 401;
                 break;
-            case "exception":
+            case 'exception':
                 $statusCode = 500;
                 break;
         }
         
         // Header pour data json
-        header("Content-Type", "application/json");
+        header('Content-Type', 'application/json');
         header(sprintf('HTTP/1.1 %s %s', $statusCode, $this->status), true, $statusCode);
         
         if ( $this->message != '')
