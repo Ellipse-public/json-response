@@ -1,0 +1,24 @@
+{
+    "name": "ellipse-online/json-response",
+    "description": "A simple class that returns a properly formatted json response with HYTP status",
+    "keywords": ["Json", "Response", "API Response Class", "PHP"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ellipse-online",
+            "email": "notification@ellipse-online.com",
+            "homepage": "www.ellipse-online.com"
+        }
+    ],
+    
+    "require": {
+    	"php": ">=5.3.0"
+    },
+    
+    "autoload": {
+    	"psr-4": {
+    		"EllipseOnline\\ResponseClass\\": "src/"
+    	}
+    }
+}
