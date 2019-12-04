@@ -1,3 +1,4 @@
 vendor
 test.php
 index.php
+.DS_Store
